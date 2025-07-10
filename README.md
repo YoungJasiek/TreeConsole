@@ -1,6 +1,6 @@
-  <a href="https://treeconsole.vercel.app/">
-    <img src="https://https://raw.githubusercontent.com/TreeConsole/Logo.png" alt="Tree Console Logo" width="110" />
-  </a>
+<a href="https://treeconsole.vercel.app/">
+  <img src="https://raw.githubusercontent.com/YoungJasiek/TreeConsole/main/Logo.png" alt="Tree Console Logo" width="110" />
+</a>
 
 # TreeConsole - Desc.
 Tree Consoles is a Polish company passionate about crafting retro-inspired consoles with a modern twist. Like our friends at Pączek Studio, we focus on innovation, avoiding direct copies of classic designs. Powered by Raspberry Pi, our consoles are created for the love of gaming
@@ -22,6 +22,6 @@ Tree Consoles is a Polish company passionate about crafting retro-inspired conso
 
 # Tree Console - Partners
   <a href="https://paczekstudio.vercel.app/">
-    <img src="https://github.com/Paczek_Studio/logo.png" alt="Paczek Studio Logo" width="110" />
+    <img src="https://raw.githubusercontent.com/YoungJasiek/Paczek_Studio/main/logo.png" alt="Paczek Studio Logo" width="110" />
   </a><br>
  Pączek Studio
