@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Logo.png" type="image/png">
+  <link rel="script" href="script.js">
+  <title>Tree Consoles</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body class="bg-gray-50 font-sans transition-colors duration-300">
+  <!-- Dark Mode Toggle Button -->
+  <button id="darkModeToggle" class="fixed top-4 right-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white z-20" aria-label="Toggle dark mode">
+    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+    </svg>
+  </button>
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-green-600 to-teal-600 text-white py-20 animate__animated animate__fadeIn">
+    <div class="container mx-auto text-center">
+      <h1 class="text-5xl font-extrabold mb-4">Tree Consoles</h1>
+      <p class="text-xl mb-6">Rediscover retro gaming with our unique, handcrafted consoles.</p>
+      <a href="#consoles" class="inline-block bg-white text-green-600 font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition">Explore Consoles</a>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-gray-800 text-white py-4 sticky top-0 z-10">
+    <div class="container mx-auto flex justify-center space-x-8">
+      <a href="#about" class="hover:text-green-400 transition">About</a>
+      <a href="#consoles" class="hover:text-green-400 transition">Consoles</a>
+      <a href="#pads" class="hover:text-green-400 transition">Pads</a>
+      <a href="#contact" class="hover:text-green-400 transition">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto py-12">
+    <!-- About Section -->
+    <section id="about" class="mb-16 animate__animated animate__fadeInUp">
+      <img src="Logo.png" alt="Tree Console" height="150px" width="150px" class="mx-auto mb-4 lazy" loading="lazy">
+      <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-white mb-6">What is Tree Console?</h2>
+      <p class="text-lg text-center max-w-3xl mx-auto text-gray-600 dark:text-gray-300">
+        Tree Consoles is a Polish company passionate about crafting retro-inspired consoles with a modern twist. Like our friends at Pączek Studio, we focus on innovation, avoiding direct copies of classic designs. Powered by Raspberry Pi, our consoles are created for the love of gaming and are not intended for commercial sale.
+      </p>
+    </section>
+
+    <!-- Consoles Section -->
+    <section id="consoles" class="mb-16">
+      <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-white mb-8">Our Consoles</h2>
+      <div class="swiper consoles-swiper">
+        <div id="consoles-wrapper" class="swiper-wrapper">
+          <!-- dynamicznie wypełnione -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Pads Section -->
+    <section id="pads" class="mb-16">
+      <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-white mb-8">Our Pads</h2>
+      <div class="swiper pads-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+              <img src="TreeConsolePad R1.png" alt="Tree Pad R1" class="mx-auto mb-4 lazy" loading="lazy">
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Tree Pad R1</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+              <img src="TreeConsolePad R2.png" alt="Tree Pad R2" class="mx-auto mb-4 lazy" loading="lazy">
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Tree Pad R2</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+              <img src="TreeConsolePad.png" alt="Tree Pad" class="mx-auto mb-4 lazy" loading="lazy">
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Tree Pad</h3>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="mb-16">
+      <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-white mb-8">Get in Touch</h2>
+      <div class="max-w-lg mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+        <div class="space-y-4">
+          <div>
+            <label for="name" class="block text-gray-700 dark:text-gray-300">Name</label>
+            <input type="text" id="name" class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white" aria-required="true">
+          </div>
+          <div>
+            <label for="email" class="block text-gray-700 dark:text-gray-300">Email</label>
+            <input type="email" id="email" class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white" aria-required="true">
+          </div>
+          <div>
+            <label for="message" class="block text-gray-700 dark:text-gray-300">Message</label>
+            <textarea id="message" class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white" rows="4" aria-required="true"></textarea>
+          </div>
+          <button class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 transition">Send Message</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 dark:bg-gray-900 text-white py-8">
+    <div class="container mx-auto text-center">
+      <p class="mb-2">© 2025 Tree Consoles. All rights reserved.</p>
+      <p>Made with passion in Poland</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Dark Mode Toggle
+    const toggle = document.getElementById('darkModeToggle');
+    toggle.addEventListener('click', () => {
+      console.log('Dark mode toggle clicked!'); // Debugging
+      document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+    });
+    // Load saved theme
+    if (localStorage.getItem('theme') === 'dark') {
+      console.log('Loading dark theme from localStorage');
+      document.documentElement.classList.add('dark');
+    }
+
+    async function loadConsoles() {
+    const response = await fetch('consoles.json');
+    const consoles = await response.json();
+    const wrapper = document.getElementById('consoles-wrapper');
+
+    consoles.forEach(console => {
+      const slide = document.createElement('div');
+      slide.className = 'swiper-slide';
+      slide.innerHTML = `
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+          <img src="${console.image}" alt="${console.name}" class="mx-auto mb-4 lazy" loading="lazy">
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white">${console.name}</h3>
+        </div>
+      `;
+      wrapper.appendChild(slide);
+    })};
+
+    // Initialize Swiper for Consoles
+    new Swiper('.consoles-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+    });
+
+    // Initialize Swiper for Pads
+    new Swiper('.pads-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+    });
+
+    loadConsoles();
+  </script>
+</body>
+</html>
